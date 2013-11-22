@@ -2,21 +2,23 @@ require "minitest/spec"
 require "minitest/autorun"
 
 class Duck
+  attr_accessor :color, :name
+
   def initialize(name, color)
     @name = name
     @color = color
   end
 
   def quack
-    puts "Quack! I'm #{@name}, the #{@color} duck."
+    return "Quack! I'm #{@name}, the #{@color} duck."
   end
 
   def backwards_quack
-    puts "Quack! I'm #{@name}, the #{@color} duck.".reverse
+    return "Quack! I'm #{@name}, the #{@color} duck.".reverse
   end
 
   def name
-   puts "Commodore Quack"
+   return "Commodore Quack"
   end
 
   def turn_blue
@@ -24,7 +26,7 @@ class Duck
   end
 
   def big_quack
-    puts = "QUACK! My name is #{@name.upcase}"
+    return "QUACK! My name is #{@name.upcase}!"
   end
 end
 
