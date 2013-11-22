@@ -8,7 +8,7 @@ class Duck
   end
 
   def quack
-    puts "Quack! I'm #{@name}, the #{@color} duck."
+    return "Quack! I'm #{@name}, the #{@color} duck."
   end
 
   def backwards_quack
